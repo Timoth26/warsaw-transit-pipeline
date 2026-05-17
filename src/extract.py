@@ -27,12 +27,6 @@ def fetch_vehicle_positions(vehicle_type=2):
     payload = {
     "type": vehicle_type
     }
-    
-    response = requests.post(
-        URL,
-        headers=headers,
-        json=payload
-    )
 
     try:
         logging.info(f"Request sent to {URL} with payload: {payload}")
